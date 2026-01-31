@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Product Store</h1>
+
+  <div class="search-wrapper">
+  <div class="search-bar">
+    <div class="input-wrapper">
+      <input type="text" id="searchInput" placeholder="Search products..." />
+      <ul id="suggestions"></ul>
+    </div>
+
+    <button id="searchBtn">Search</button>
+    <button id="historyBtn" onclick="window.location.href='history.html'">View History</button>
+
+  </div>
+</div>
+
+  <div class="products" id="products"></div>
+
+<!-- Pagination -->
+<div id="pagination" class="pagination">
+  <button id="prevBtn">Prev</button>
+  <span id="pageInfo">Page 1</span>
+  <button id="nextBtn">Next</button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
